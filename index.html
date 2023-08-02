@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Busca el Clima</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body >
+    <div class="contenedor mx-auto">
+        <h1 class="text-4xl mt-5 text-blue-700 font-bold uppercase text-center">¡Busca el Clima!</h1>
+        <div class="max-w-md mx-auto bg-gray-200 rounded-lg shadow-lg p-8 mt-10">
+            <div id="resultado" class="text-center text-gray-800 mt-6">
+                <p>Agrega los datos y veras el resultado</p>
+            </div>
+
+            <form id="formulario" class="mt-10" action="#" method="POST">
+                <div class="mt-5">
+                    <input type="text" name="ciudad" id="ciudad" placeholder="Escribe tu Ciudad"
+                        class="w-full p-2 rounded border border-blue-500 focus:outline-none focus:ring focus:ring-blue-300" />
+                </div>
+                <div class="mt-5">
+                    <select
+                        class="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        id="pais">
+                        <option disabled selected value="">-- Seleccione un país --</option>
+                        <option value="AR">Argentina</option>
+                        <option value="CO">Colombia</option>
+                        <option value="CR">Costa Rica</option>
+                        <option value="ES">España</option>
+                        <option value="US">Estados Unidos</option>
+                        <option value="MX">México</option>
+                        <option value="PE">Perú</option>
+                        <option value="AU">Australia</option>
+                        <option value="BR">Brasil</option>
+                        <option value="CA">Canadá</option>
+                        <option value="CN">China</option>
+                        <option value="FR">Francia</option>
+                        <option value="DE">Alemania</option>
+                        <option value="IN">India</option>
+                        <option value="JP">Japón</option>
+                        <option value="NZ">Nueva Zelanda</option>
+                        <option value="ZA">Sudáfrica</option>
+                        <option value="CH">Suiza</option>
+                        <option value="AT">Austria</option>
+                        <option value="BE">Bélgica</option>
+                        <option value="CL">Chile</option>
+                        <option value="DK">Dinamarca</option>
+                        <option value="EG">Egipto</option>
+                        <option value="FI">Finlandia</option>
+                        <option value="GR">Grecia</option>
+                        <option value="HU">Hungría</option>
+                        <option value="ID">Indonesia</option>
+                        <option value="IT">Italia</option>
+                        <option value="KR">Corea del Sur</option>
+                        <option value="MY">Malasia</option>
+                        <option value="NL">Países Bajos</option>
+                        <option value="PT">Portugal</option>
+                        <option value="RU">Rusia</option>
+                        <option value="SE">Suecia</option>
+                        <option value="TH">Tailandia</option>
+                        <option value="TR">Turquía</option>
+                        <option value="GB">Reino Unido</option>
+                        <option value="VN">Vietnam</option>
+                    </select>
+                </div>
+
+                <input type="submit"
+                    class="mt-5 w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 uppercase cursor-pointer rounded"
+                    value="Obtener Clima" />
+
+            </form>
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
